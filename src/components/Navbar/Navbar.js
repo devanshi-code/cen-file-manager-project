@@ -1,6 +1,13 @@
 import React from 'react';
-import styles from "./Navbar.module.scss";
+import Logo from '../../assets/logo.svg';
+// import styles from "./Navbar.module.scss";
 
-export default function Navbar() {
-  return <div className={styles.header}></div>;
+const Navbar = () => {
+    return ( 
+       <div className='div-header' style={{display:'flex',flexDirection:'row'}}>
+      <img src={Logo} />
+      </div>
+    )
+
 }
+export default Navbar;
